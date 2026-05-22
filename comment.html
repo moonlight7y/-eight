@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comments</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container comment-panel">
+        <div class="comment-header">
+            <div>
+                <h1>Community Comments</h1>
+                <p class="comment-metadata" id="commentMetadata">Loading...</p>
+            </div>
+            <div class="comment-actions">
+                <a class="btn-submit" href="index.html">Home</a>
+                <button class="btn-submit" id="logoutBtn" type="button">Logout</button>
+            </div>
+        </div>
+
+        <div class="comment-box">
+            <div class="message" id="commentMessage"></div>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="commentText">Add a comment</label>
+                    <textarea id="commentText" name="commentText" placeholder="Write something..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Post Comment</button>
+            </form>
+        </div>
+
+        <ul class="comment-list" id="commentList"></ul>
+    </div>
+</body>
+</html>
